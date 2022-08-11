@@ -8,7 +8,8 @@ import { SEO } from "../components/seo"
 import { article } from "../constants/json-ld"
 import ProseTemplate from "../pages/prose"
 
-export default ProseTemplate
+const ProseTemplate2: React.FC<PageProps<WritingViewDataProps>> = (props) => <ProseTemplate {...props} />
+export default ProseTemplate2
 
 export const Head: HeadFC<WritingViewDataProps> = ({ data: { post } }) => (
   <SEO
